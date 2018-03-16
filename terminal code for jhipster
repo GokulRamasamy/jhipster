@@ -1,0 +1,495 @@
+Creating JHipster project using terminal in linux mint 18.1 :
+
+raster@ri4 ~/gokul/test/jhip1 $ yo --version
+2.0.1
+raster@ri4 ~/gokul/test/jhip1 $ nodejs --version
+v7.10.1
+raster@ri4 ~/gokul/test/jhip1 $ npm -v
+5.7.1
+raster@ri4 ~/gokul/test/jhip1 $ yo jhipster
+
+
+        ██╗ ██╗   ██╗ ████████╗ ███████╗   ██████╗ ████████╗ ████████╗ ███████╗
+        ██║ ██║   ██║ ╚══██╔══╝ ██╔═══██╗ ██╔════╝ ╚══██╔══╝ ██╔═════╝ ██╔═══██╗
+        ██║ ████████║    ██║    ███████╔╝ ╚█████╗     ██║    ██████╗   ███████╔╝
+  ██╗   ██║ ██╔═══██║    ██║    ██╔════╝   ╚═══██╗    ██║    ██╔═══╝   ██╔══██║
+  ╚██████╔╝ ██║   ██║ ████████╗ ██║       ██████╔╝    ██║    ████████╗ ██║  ╚██╗
+   ╚═════╝  ╚═╝   ╚═╝ ╚═══════╝ ╚═╝       ╚═════╝     ╚═╝    ╚═══════╝ ╚═╝   ╚═╝
+
+                            http://www.jhipster.tech
+
+Welcome to the JHipster Generator v4.14.1
+ _______________________________________________________________________________________________________________
+
+  If you find JHipster useful consider supporting our collective https://opencollective.com/generator-jhipster
+  Documentation for creating an application: http://www.jhipster.tech/creating-an-app/
+ _______________________________________________________________________________________________________________
+
+Application files will be generated in folder: /home/raster/gokul/test/jhip1
+? Which *type* of application would you like to create? Monolithic application (
+recommended for simple projects)
+? What is the base name of your application? jhip1
+? What is your default Java package name? io.sample.jhip1
+? Do you want to use the JHipster Registry to configure, monitor and scale your 
+application? Yes
+? Which *type* of database would you like to use? SQL (H2, MySQL, MariaDB, Postg
+reSQL, Oracle, MSSQL)
+? Which *production* database would you like to use? MySQL
+? Which *development* database would you like to use? H2 with disk-based persist
+ence
+? Do you want to use the Spring cache abstraction? Yes, with the Ehcache impleme
+ntation (local cache, for a single node)
+? Do you want to use Hibernate 2nd level cache? No
+? Would you like to use Maven or Gradle for building the backend? Gradle
+? Which other technologies would you like to use? 
+? Which *Framework* would you like to use for the client? AngularJS 1.x
+? Would you like to enable *SASS* support using the LibSass stylesheet preproces
+sor? No
+? Would you like to enable internationalization support? No
+? Besides JUnit and Karma, which testing frameworks would you like to use? 
+? Would you like to install other generators from the JHipster Marketplace? No
+   create bower.json
+   create package.json
+   create README.md
+   create .gitignore
+   create .gitattributes
+   create .editorconfig
+   create src/main/docker/Dockerfile
+   create src/main/docker/.dockerignore
+   create src/main/docker/app.yml
+   create src/main/docker/mysql.yml
+   create src/main/docker/central-server-config/README.md
+   create src/main/docker/jhipster-registry.yml
+   create src/main/docker/central-server-config/docker-config/application.yml
+   create src/main/docker/central-server-config/localhost-config/application.yml
+   create src/main/docker/sonar.yml
+   create build.gradle
+   create settings.gradle
+   create gradle.properties
+   create gradle/yeoman.gradle
+   create gradle/sonar.gradle
+   create gradle/docker.gradle
+   create gradle/profile_dev.gradle
+   create gradle/profile_prod.gradle
+   create gradle/mapstruct.gradle
+   create gradle/graphite.gradle
+   create gradle/prometheus.gradle
+   create gradle/zipkin.gradle
+   create gradle/liquibase.gradle
+   create gradlew
+   create gradlew.bat
+   create gradle/wrapper/gradle-wrapper.jar
+   create gradle/wrapper/gradle-wrapper.properties
+   create src/main/resources/banner.txt
+   create src/main/resources/.h2.server.properties
+   create src/main/resources/templates/error.html
+   create src/main/resources/logback-spring.xml
+   create src/main/resources/config/application.yml
+   create src/main/resources/config/application-dev.yml
+   create src/main/resources/config/application-prod.yml
+   create src/main/resources/config/liquibase/changelog/00000000000000_initial_schema.xml
+   create src/main/resources/config/liquibase/master.xml
+   create src/main/resources/i18n/messages.properties
+   create src/main/java/io/sample/jhip1/security/SpringSecurityAuditorAware.java
+   create src/main/java/io/sample/jhip1/security/SecurityUtils.java
+   create src/main/java/io/sample/jhip1/security/AuthoritiesConstants.java
+   create src/main/java/io/sample/jhip1/security/jwt/TokenProvider.java
+   create src/main/java/io/sample/jhip1/security/jwt/JWTConfigurer.java
+   create src/main/java/io/sample/jhip1/security/jwt/JWTFilter.java
+   create src/main/java/io/sample/jhip1/config/SecurityConfiguration.java
+   create src/main/java/io/sample/jhip1/security/DomainUserDetailsService.java
+   create src/main/java/io/sample/jhip1/security/UserNotActivatedException.java
+   create src/main/java/io/sample/jhip1/web/rest/vm/LoginVM.java
+   create src/main/java/io/sample/jhip1/web/rest/UserJWTController.java
+   create src/main/java/io/sample/jhip1/security/package-info.java
+   create src/main/resources/config/bootstrap.yml
+   create src/main/resources/config/bootstrap-prod.yml
+   create src/main/java/io/sample/jhip1/Jhip1App.java
+   create src/main/java/io/sample/jhip1/ApplicationWebXml.java
+   create src/main/java/io/sample/jhip1/aop/logging/LoggingAspect.java
+   create src/main/java/io/sample/jhip1/config/DefaultProfileUtil.java
+   create src/main/java/io/sample/jhip1/config/package-info.java
+   create src/main/java/io/sample/jhip1/config/AsyncConfiguration.java
+   create src/main/java/io/sample/jhip1/config/CacheConfiguration.java
+   create src/main/java/io/sample/jhip1/config/Constants.java
+   create src/main/java/io/sample/jhip1/config/DateTimeFormatConfiguration.java
+   create src/main/java/io/sample/jhip1/config/LoggingConfiguration.java
+   create src/main/java/io/sample/jhip1/config/CloudDatabaseConfiguration.java
+   create src/main/java/io/sample/jhip1/config/DatabaseConfiguration.java
+   create src/main/java/io/sample/jhip1/config/audit/package-info.java
+   create src/main/java/io/sample/jhip1/config/audit/AuditEventConverter.java
+   create src/main/java/io/sample/jhip1/config/ApplicationProperties.java
+   create src/main/java/io/sample/jhip1/config/JacksonConfiguration.java
+   create src/main/java/io/sample/jhip1/config/LocaleConfiguration.java
+   create src/main/java/io/sample/jhip1/config/LoggingAspectConfiguration.java
+   create src/main/java/io/sample/jhip1/config/MetricsConfiguration.java
+   create src/main/java/io/sample/jhip1/config/ThymeleafConfiguration.java
+   create src/main/java/io/sample/jhip1/config/WebConfigurer.java
+   create src/main/java/io/sample/jhip1/domain/package-info.java
+   create src/main/java/io/sample/jhip1/domain/AbstractAuditingEntity.java
+   create src/main/java/io/sample/jhip1/domain/PersistentAuditEvent.java
+   create src/main/java/io/sample/jhip1/repository/package-info.java
+   create src/main/java/io/sample/jhip1/service/package-info.java
+   create src/main/java/io/sample/jhip1/service/util/RandomUtil.java
+   create src/main/java/io/sample/jhip1/web/rest/errors/package-info.java
+   create src/main/java/io/sample/jhip1/web/rest/errors/InternalServerErrorException.java
+   create src/main/java/io/sample/jhip1/web/rest/errors/BadRequestAlertException.java
+   create src/main/java/io/sample/jhip1/web/rest/errors/CustomParameterizedException.java
+   create src/main/java/io/sample/jhip1/web/rest/errors/EmailAlreadyUsedException.java
+   create src/main/java/io/sample/jhip1/web/rest/errors/EmailNotFoundException.java
+   create src/main/java/io/sample/jhip1/web/rest/errors/ErrorConstants.java
+   create src/main/java/io/sample/jhip1/web/rest/errors/ExceptionTranslator.java
+   create src/main/java/io/sample/jhip1/web/rest/errors/FieldErrorVM.java
+   create src/main/java/io/sample/jhip1/web/rest/errors/InvalidPasswordException.java
+   create src/main/java/io/sample/jhip1/web/rest/errors/LoginAlreadyUsedException.java
+   create src/main/java/io/sample/jhip1/web/rest/vm/package-info.java
+   create src/main/java/io/sample/jhip1/web/rest/vm/LoggerVM.java
+   create src/main/java/io/sample/jhip1/web/rest/util/HeaderUtil.java
+   create src/main/java/io/sample/jhip1/web/rest/util/PaginationUtil.java
+   create src/main/java/io/sample/jhip1/web/rest/package-info.java
+   create src/main/java/io/sample/jhip1/web/rest/LogsResource.java
+   create src/main/java/io/sample/jhip1/web/rest/ProfileInfoResource.java
+   create src/test/java/io/sample/jhip1/config/WebConfigurerTest.java
+   create src/test/java/io/sample/jhip1/config/WebConfigurerTestController.java
+   create src/test/java/io/sample/jhip1/web/rest/TestUtil.java
+   create src/test/java/io/sample/jhip1/web/rest/LogsResourceIntTest.java
+   create src/test/java/io/sample/jhip1/web/rest/ProfileInfoResourceIntTest.java
+   create src/test/java/io/sample/jhip1/web/rest/errors/ExceptionTranslatorIntTest.java
+   create src/test/java/io/sample/jhip1/web/rest/errors/ExceptionTranslatorTestController.java
+   create src/test/java/io/sample/jhip1/web/rest/util/PaginationUtilUnitTest.java
+   create src/test/resources/config/application.yml
+   create src/test/resources/logback.xml
+   create src/test/resources/config/bootstrap.yml
+   create src/test/java/io/sample/jhip1/security/DomainUserDetailsServiceIntTest.java
+   create src/main/resources/config/liquibase/users.csv
+   create src/main/resources/config/liquibase/authorities.csv
+   create src/main/resources/config/liquibase/users_authorities.csv
+   create src/main/resources/mails/activationEmail.html
+   create src/main/resources/mails/creationEmail.html
+   create src/main/resources/mails/passwordResetEmail.html
+   create src/main/java/io/sample/jhip1/domain/User.java
+   create src/main/java/io/sample/jhip1/domain/Authority.java
+   create src/main/java/io/sample/jhip1/repository/CustomAuditEventRepository.java
+   create src/main/java/io/sample/jhip1/repository/AuthorityRepository.java
+   create src/main/java/io/sample/jhip1/repository/PersistenceAuditEventRepository.java
+   create src/main/java/io/sample/jhip1/repository/UserRepository.java
+   create src/main/java/io/sample/jhip1/service/UserService.java
+   create src/main/java/io/sample/jhip1/service/MailService.java
+   create src/main/java/io/sample/jhip1/service/AuditEventService.java
+   create src/main/java/io/sample/jhip1/service/dto/package-info.java
+   create src/main/java/io/sample/jhip1/service/dto/UserDTO.java
+   create src/main/java/io/sample/jhip1/web/rest/vm/ManagedUserVM.java
+   create src/main/java/io/sample/jhip1/web/rest/AccountResource.java
+   create src/main/java/io/sample/jhip1/web/rest/UserResource.java
+   create src/main/java/io/sample/jhip1/web/rest/vm/KeyAndPasswordVM.java
+   create src/main/java/io/sample/jhip1/service/mapper/package-info.java
+   create src/main/java/io/sample/jhip1/service/mapper/UserMapper.java
+   create src/main/java/io/sample/jhip1/web/rest/AuditResource.java
+   create src/test/resources/mails/testEmail.html
+   create src/test/resources/i18n/messages_en.properties
+   create src/test/java/io/sample/jhip1/service/MailServiceIntTest.java
+   create src/test/java/io/sample/jhip1/service/UserServiceIntTest.java
+   create src/test/java/io/sample/jhip1/web/rest/UserResourceIntTest.java
+   create src/test/java/io/sample/jhip1/web/rest/AccountResourceIntTest.java
+   create src/test/java/io/sample/jhip1/security/SecurityUtilsUnitTest.java
+   create src/test/java/io/sample/jhip1/security/jwt/JWTFilterTest.java
+   create src/test/java/io/sample/jhip1/security/jwt/TokenProviderTest.java
+   create src/test/java/io/sample/jhip1/web/rest/UserJWTControllerIntTest.java
+   create src/test/java/io/sample/jhip1/repository/CustomAuditEventRepositoryIntTest.java
+   create src/test/java/io/sample/jhip1/web/rest/AuditResourceIntTest.java
+   create gulp/handle-errors.js
+   create .bowerrc
+   create .eslintrc.json
+   create .eslintignore
+   create gulpfile.js
+   create gulp/utils.js
+   create gulp/serve.js
+   create gulp/config.js
+   create gulp/build.js
+   create gulp/copy.js
+   create gulp/inject.js
+   create src/main/webapp/content/css/main.css
+   create src/main/webapp/content/css/documentation.css
+   create src/main/webapp/content/images/hipster.png
+   create src/main/webapp/content/images/hipster2x.png
+   create src/main/webapp/content/images/logo-jhipster.png
+   create src/main/webapp/swagger-ui/index.html
+   create src/main/webapp/swagger-ui/images/throbber.gif
+   create src/main/webapp/favicon.ico
+   create src/main/webapp/robots.txt
+   create src/main/webapp/404.html
+   create src/main/webapp/index.html
+   create src/main/webapp/manifest.webapp
+   create src/main/webapp/app/app.module.js
+   create src/main/webapp/app/app.state.js
+   create src/main/webapp/app/app.constants.js
+   create src/main/webapp/app/blocks/handlers/state.handler.js
+   create src/main/webapp/app/blocks/config/alert.config.js
+   create src/main/webapp/app/blocks/config/http.config.js
+   create src/main/webapp/app/blocks/config/localstorage.config.js
+   create src/main/webapp/app/blocks/config/compile.config.js
+   create src/main/webapp/app/blocks/config/uib-pager.config.js
+   create src/main/webapp/app/blocks/config/uib-pagination.config.js
+   create src/main/webapp/app/blocks/interceptor/auth-expired.interceptor.js
+   create src/main/webapp/app/blocks/interceptor/errorhandler.interceptor.js
+   create src/main/webapp/app/blocks/interceptor/notification.interceptor.js
+   create src/main/webapp/app/blocks/interceptor/auth.interceptor.js
+   create src/main/webapp/app/entities/entity.state.js
+   create src/main/webapp/app/home/home.controller.js
+   create src/main/webapp/app/home/home.state.js
+   create src/main/webapp/app/home/home.html
+   create src/main/webapp/app/layouts/navbar/navbar.controller.js
+   create src/main/webapp/app/services/profiles/profile.service.js
+   create src/main/webapp/app/services/profiles/page-ribbon.directive.js
+   create src/main/webapp/app/layouts/navbar/navbar.html
+   create src/main/webapp/app/layouts/error/error.html
+   create src/main/webapp/app/layouts/error/accessdenied.html
+   create src/main/webapp/app/layouts/error/error.state.js
+   create src/main/webapp/app/account/account.state.js
+   create src/main/webapp/app/account/activate/activate.controller.js
+   create src/main/webapp/app/account/activate/activate.state.js
+   create src/main/webapp/app/account/activate/activate.html
+   create src/main/webapp/app/account/password/password.controller.js
+   create src/main/webapp/app/account/password/password.state.js
+   create src/main/webapp/app/account/password/password-strength-bar.directive.js
+   create src/main/webapp/app/account/password/password.html
+   create src/main/webapp/app/account/register/register.controller.js
+   create src/main/webapp/app/account/register/register.state.js
+   create src/main/webapp/app/account/register/register.html
+   create src/main/webapp/app/account/reset/request/reset.request.controller.js
+   create src/main/webapp/app/account/reset/request/reset.request.state.js
+   create src/main/webapp/app/account/reset/request/reset.request.html
+   create src/main/webapp/app/account/reset/finish/reset.finish.controller.js
+   create src/main/webapp/app/account/reset/finish/reset.finish.html
+   create src/main/webapp/app/account/reset/finish/reset.finish.state.js
+   create src/main/webapp/app/account/settings/settings.controller.js
+   create src/main/webapp/app/account/settings/settings.state.js
+   create src/main/webapp/app/account/settings/settings.html
+   create src/main/webapp/app/admin/admin.state.js
+   create src/main/webapp/app/admin/configuration/configuration.controller.js
+   create src/main/webapp/app/admin/configuration/configuration.service.js
+   create src/main/webapp/app/admin/configuration/configuration.state.js
+   create src/main/webapp/app/admin/configuration/configuration.html
+   create src/main/webapp/app/admin/health/health.controller.js
+   create src/main/webapp/app/admin/health/health.modal.controller.js
+   create src/main/webapp/app/admin/health/health.service.js
+   create src/main/webapp/app/admin/health/health.state.js
+   create src/main/webapp/app/admin/health/health.html
+   create src/main/webapp/app/admin/health/health.modal.html
+   create src/main/webapp/app/admin/logs/logs.controller.js
+   create src/main/webapp/app/admin/logs/logs.service.js
+   create src/main/webapp/app/admin/logs/logs.state.js
+   create src/main/webapp/app/admin/logs/logs.html
+   create src/main/webapp/app/admin/metrics/metrics.controller.js
+   create src/main/webapp/app/admin/metrics/metrics.modal.controller.js
+   create src/main/webapp/app/admin/metrics/metrics.service.js
+   create src/main/webapp/app/admin/metrics/metrics.state.js
+   create src/main/webapp/app/admin/metrics/metrics.html
+   create src/main/webapp/app/admin/metrics/metrics.modal.html
+   create src/main/webapp/app/admin/docs/docs.html
+   create src/main/webapp/app/admin/docs/docs.state.js
+   create src/main/webapp/app/admin/audits/audits.controller.js
+   create src/main/webapp/app/admin/audits/audits.service.js
+   create src/main/webapp/app/admin/audits/audits.state.js
+   create src/main/webapp/app/admin/audits/audits.html
+   create src/main/webapp/app/admin/user-management/user-management.html
+   create src/main/webapp/app/admin/user-management/user-management-detail.html
+   create src/main/webapp/app/admin/user-management/user-management-dialog.html
+   create src/main/webapp/app/admin/user-management/user-management-delete-dialog.html
+   create src/main/webapp/app/admin/user-management/user-management.state.js
+   create src/main/webapp/app/admin/user-management/user-management.controller.js
+   create src/main/webapp/app/admin/user-management/user-management-detail.controller.js
+   create src/main/webapp/app/admin/user-management/user-management-dialog.controller.js
+   create src/main/webapp/app/admin/user-management/user-management-delete-dialog.controller.js
+   create src/main/webapp/app/components/login/login.html
+   create src/main/webapp/app/components/login/login.service.js
+   create src/main/webapp/app/components/login/login.controller.js
+   create src/main/webapp/app/components/form/show-validation.directive.js
+   create src/main/webapp/app/components/form/maxbytes.directive.js
+   create src/main/webapp/app/components/form/minbytes.directive.js
+   create src/main/webapp/app/components/form/pagination.constants.js
+   create src/main/webapp/app/components/util/base64.service.js
+   create src/main/webapp/app/components/util/capitalize.filter.js
+   create src/main/webapp/app/components/util/error.constants.js
+   create src/main/webapp/app/components/util/parse-links.service.js
+   create src/main/webapp/app/components/util/truncate-characters.filter.js
+   create src/main/webapp/app/components/util/truncate-words.filter.js
+   create src/main/webapp/app/components/util/date-util.service.js
+   create src/main/webapp/app/components/util/data-util.service.js
+   create src/main/webapp/app/components/util/pagination-util.service.js
+   create src/main/webapp/app/components/util/sort.directive.js
+   create src/main/webapp/app/components/util/sort-by.directive.js
+   create src/main/webapp/app/components/util/jhi-item-count.directive.js
+   create src/main/webapp/app/components/alert/alert.service.js
+   create src/main/webapp/app/components/alert/alert.directive.js
+   create src/main/webapp/app/components/alert/alert-error.directive.js
+   create src/main/webapp/app/services/auth/auth.service.js
+   create src/main/webapp/app/services/auth/principal.service.js
+   create src/main/webapp/app/services/auth/has-authority.directive.js
+   create src/main/webapp/app/services/auth/has-any-authority.directive.js
+   create src/main/webapp/app/services/auth/account.service.js
+   create src/main/webapp/app/services/auth/activate.service.js
+   create src/main/webapp/app/services/auth/password.service.js
+   create src/main/webapp/app/services/auth/password-reset-init.service.js
+   create src/main/webapp/app/services/auth/password-reset-finish.service.js
+   create src/main/webapp/app/services/auth/register.service.js
+   create src/main/webapp/app/services/user/user.service.js
+   create src/main/webapp/app/services/auth/auth.jwt.service.js
+   create src/test/javascript/karma.conf.js
+   create src/test/javascript/spec/helpers/module.js
+   create src/test/javascript/spec/helpers/httpBackend.js
+   create src/test/javascript/spec/app/admin/health/health.controller.spec.js
+   create src/test/javascript/spec/app/account/password/password.controller.spec.js
+   create src/test/javascript/spec/app/account/password/password-strength-bar.directive.spec.js
+   create src/test/javascript/spec/app/account/settings/settings.controller.spec.js
+   create src/test/javascript/spec/app/account/activate/activate.controller.spec.js
+   create src/test/javascript/spec/app/account/register/register.controller.spec.js
+   create src/test/javascript/spec/app/account/reset/finish/reset.finish.controller.spec.js
+   create src/test/javascript/spec/app/account/reset/request/reset.request.controller.spec.js
+   create src/test/javascript/spec/app/services/auth/auth.services.spec.js
+   create src/test/javascript/spec/app/components/login/login.controller.spec.js
+
+
+I'm all done. Running yarn install && bower install for you to install the required dependencies. If this fails, try running the command yourself.
+
+
+ERROR: [Errno 2] No such file or directory: 'install'
+bower cached        https://github.com/twbs/bootstrap.git#3.3.7
+bower validate      3.3.7 against https://github.com/twbs/bootstrap.git#3.3.7
+bower cached        https://github.com/gsklee/ngStorage.git#0.3.10
+bower validate      0.3.10 against https://github.com/gsklee/ngStorage.git#0.3.10
+bower cached        https://github.com/gillardo/bootstrap-ui-datetime-picker.git#2.4.3
+bower validate      2.4.3 against https://github.com/gillardo/bootstrap-ui-datetime-picker.git#2.4.3
+bower cached        https://github.com/jquery/jquery-dist.git#3.1.0
+bower validate      3.1.0 against https://github.com/jquery/jquery-dist.git#3.1.0
+bower cached        https://github.com/chieffancypants/angular-loading-bar.git#0.9.0
+bower validate      0.9.0 against https://github.com/chieffancypants/angular-loading-bar.git#0.9.0
+bower cached        https://github.com/angular/bower-angular-cookies.git#1.5.8
+bower validate      1.5.8 against https://github.com/angular/bower-angular-cookies.git#1.5.8
+bower cached        https://github.com/bestiejs/json3.git#3.3.2
+bower validate      3.3.2 against https://github.com/bestiejs/json3.git#3.3.2
+bower cached        https://github.com/SlexAxton/messageformat.js.git#0.3.1
+bower validate      0.3.1 against https://github.com/SlexAxton/messageformat.js.git#0.3.1
+bower cached        https://github.com/Modernizr/Modernizr.git#3.3.1
+bower validate      3.3.1 against https://github.com/Modernizr/Modernizr.git#3.3.1
+bower cached        https://github.com/ng-infinite-scroll/ng-infinite-scroll-bower.git#1.3.0
+bower validate      1.3.0 against https://github.com/ng-infinite-scroll/ng-infinite-scroll-bower.git#1.3.0
+bower cached        https://github.com/angular/bower-angular-sanitize.git#1.5.8
+bower validate      1.5.8 against https://github.com/angular/bower-angular-sanitize.git#1.5.8
+bower cached        https://github.com/angular/bower-angular-mocks.git#1.5.8
+bower validate      1.5.8 against https://github.com/angular/bower-angular-mocks.git#1.5.8
+bower cached        https://github.com/wordnik/swagger-ui.git#2.1.5
+bower validate      2.1.5 against https://github.com/wordnik/swagger-ui.git#2.1.5
+bower cached        https://github.com/angular-ui/angular-ui-router-bower.git#0.3.1
+bower validate      0.3.1 against https://github.com/angular-ui/angular-ui-router-bower.git#0.3.1
+bower cached        https://github.com/angular/bower-angular-resource.git#1.5.8
+bower validate      1.5.8 against https://github.com/angular/bower-angular-resource.git#1.5.8
+bower cached        https://github.com/saintmac/angular-cache-buster.git#0.4.3
+bower validate      0.4.3 against https://github.com/saintmac/angular-cache-buster.git#0.4.3
+bower cached        https://github.com/angular-ui/bootstrap-bower.git#1.3.3
+bower validate      1.3.3 against https://github.com/angular-ui/bootstrap-bower.git#1.3.3
+bower cached        https://github.com/angular/bower-angular.git#1.5.8
+bower validate      1.5.8 against https://github.com/angular/bower-angular.git#1.5.8
+bower cached        https://github.com/angular/bower-angular-aria.git#1.5.8
+bower validate      1.5.8 against https://github.com/angular/bower-angular-aria.git#1.5.8
+bower cached        https://github.com/danialfarid/angular-file-upload-bower.git#12.0.4
+bower validate      12.0.4 against https://github.com/danialfarid/angular-file-upload-bower.git#12.0.4
+bower extra-resolution      Unnecessary resolution: angular#1.5.8
+bower extra-resolution      Unnecessary resolution: angular-bootstrap#2.0.0
+bower extra-resolution      Unnecessary resolution: jquery#3.1.0
+bower install               bootstrap-ui-datetime-picker#2.4.3
+bower install               jquery#3.1.0
+bower install               angular-loading-bar#0.9.0
+bower install               ngstorage#0.3.10
+bower install               bootstrap#3.3.7
+bower install               json3#3.3.2
+bower install               messageformat#0.3.1
+bower install               modernizr#3.3.1
+bower install               angular-cookies#1.5.8
+bower install               ngInfiniteScroll#1.3.0
+bower install               angular-sanitize#1.5.8
+bower install               angular-ui-router#0.3.1
+bower install               angular-mocks#1.5.8
+bower install               swagger-ui#2.1.5
+bower install               angular-resource#1.5.8
+bower install               angular-cache-buster#0.4.3
+bower install               angular-bootstrap#1.3.3
+bower install               angular#1.5.8
+bower install               angular-aria#1.5.8
+bower install               ng-file-upload#12.0.4
+
+bootstrap-ui-datetime-picker#2.4.3 src/main/webapp/bower_components/bootstrap-ui-datetime-picker
+└── angular-bootstrap#1.3.3
+
+jquery#3.1.0 src/main/webapp/bower_components/jquery
+
+angular-loading-bar#0.9.0 src/main/webapp/bower_components/angular-loading-bar
+└── angular#1.5.8
+
+ngstorage#0.3.10 src/main/webapp/bower_components/ngstorage
+└── angular#1.5.8
+
+bootstrap#3.3.7 src/main/webapp/bower_components/bootstrap
+└── jquery#3.1.0
+
+json3#3.3.2 src/main/webapp/bower_components/json3
+
+messageformat#0.3.1 src/main/webapp/bower_components/messageformat
+
+modernizr#3.3.1 src/main/webapp/bower_components/modernizr
+
+angular-cookies#1.5.8 src/main/webapp/bower_components/angular-cookies
+└── angular#1.5.8
+
+ngInfiniteScroll#1.3.0 src/main/webapp/bower_components/ngInfiniteScroll
+└── angular#1.5.8
+
+angular-sanitize#1.5.8 src/main/webapp/bower_components/angular-sanitize
+└── angular#1.5.8
+
+angular-ui-router#0.3.1 src/main/webapp/bower_components/angular-ui-router
+└── angular#1.5.8
+
+angular-mocks#1.5.8 src/main/webapp/bower_components/angular-mocks
+└── angular#1.5.8
+
+swagger-ui#2.1.5 src/main/webapp/bower_components/swagger-ui
+
+angular-resource#1.5.8 src/main/webapp/bower_components/angular-resource
+└── angular#1.5.8
+
+angular-cache-buster#0.4.3 src/main/webapp/bower_components/angular-cache-buster
+
+angular-bootstrap#1.3.3 src/main/webapp/bower_components/angular-bootstrap
+└── angular#1.5.8
+
+angular#1.5.8 src/main/webapp/bower_components/angular
+
+angular-aria#1.5.8 src/main/webapp/bower_components/angular-aria
+└── angular#1.5.8
+
+ng-file-upload#12.0.4 src/main/webapp/bower_components/ng-file-upload
+└── angular#1.5.8
+[17:48:09] Local gulp not found in ~/gokul/test/jhip1
+[17:48:09] Try running: npm install gulp
+If you find JHipster useful consider supporting our collective https://opencollective.com/generator-jhipster
+
+Server application generated successfully.
+
+Run your Spring Boot application:
+ ./gradlew
+
+Client application generated successfully.
+
+Inject your front end dependencies into your source code:
+ gulp inject
+
+Generate the AngularJS constants:
+ gulp ngconstant:dev
+
+Or do all of the above:
+ gulp install
+
+raster@ri4 ~/gokul/test/jhip1 $ 
+
+
